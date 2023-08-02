@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var  lamp = false
+    @State var  face = false
     var body: some View {
         VStack{
             ZStack{
@@ -20,6 +21,26 @@ struct ContentView: View {
                 }){
                     Text("encender")
                 }
+                
+                
+                
+                
+                
+            }
+            ZStack{
+               
+                Button(action:{
+                    // cambia el estado del booleano
+                    face.toggle()
+                    
+                }){
+                    Text(face ? "😄" : "😂").font(.system(size:100))
+                }
+                
+                
+                
+                
+                
             }
         }.edgesIgnoringSafeArea(.all)
         
