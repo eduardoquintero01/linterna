@@ -14,7 +14,7 @@ struct ContentView: View {
             ZStack{
                 Color(lamp ? .black : .white)
                 Button(action:{
-                    
+                    // cambia el estado del booleano
                     lamp.toggle()
                     
                 }){
