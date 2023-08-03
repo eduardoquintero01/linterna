@@ -42,6 +42,24 @@ struct ContentView: View {
                 
                 
             }
+            
+            
+            ZStack{
+               
+                Button(action:{
+                    // cambia el estado del booleano
+                    face.toggle()
+                    
+                }){
+                    Text(face ? "<-" : "->").font(.system(size:100))
+                }
+                
+                
+                
+                
+                
+            }
+            
         }.edgesIgnoringSafeArea(.all)
         
     }
